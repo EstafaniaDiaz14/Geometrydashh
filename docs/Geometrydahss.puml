@@ -1,0 +1,24 @@
+@startuml Geometrydahss
+
+class Jugador
+class Obstaculo
+class Mapa 
+class Nivel
+class Moneda 
+class Puntaje
+class Vida
+class Personaje 
+class Pico 
+class Cubo 
+
+Jugador o-- Personaje
+Jugador *-- Puntaje
+Mapa *-- Nivel
+Personaje --|> Cubo
+Pico --|> Obstaculo
+Mapa *-- Obstaculo
+Jugador *-- Vida
+Mapa *-- Moneda
+Jugador o-- Mapa
+
+@enduml
